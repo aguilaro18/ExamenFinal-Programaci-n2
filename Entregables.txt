@@ -1,0 +1,19 @@
+Entregables: 
+
+1. Qué entendí y qué tablas o modelos se crearon?
+Entendí que necesitaba convertir el proyecto de registro de estudiantes en una app para gestionar préstamos de equipos de laboratorio universitario, con acceso para estudiantes y administradores.
+
+La base usa Supabase e incluye estas tablas:
+
+profiles: datos del usuario —nombre, carnet, carrera, foto y rol (student o admin). La autenticación se apoya también en auth.users, que administra Supabase.
+equipment: nombre, descripción, imagen, unidades totales y unidades disponibles.
+loans: estudiante y equipo vinculados, fechas de solicitud y devolución, estado del préstamo y fechas de aprobación o devolución.
+
+En el código, los tipos principales son PerfilUsuario, Equipo y Prestamo, definidos en Prestamo.ts.
+
+2. ¿Qué partes le pedí a la IA que hiciera y por qué?
+Le pedí que me ayudara con el inicio de sesión y la funcionalidad de algunos botones, las opciones de acceso para estudiante y administrador, no me conectaba el inicio de sesión con Supabase y tampoco leía el rol real del perfil antes de abrir el área correspondiente. Lo hice así, según instrucciones para que un estudiante no pueda entrar como administrador solo por seleccionar esa opción.
+
+
+3. ¿Qué tuvo que corregir la IA y cómo se dio cuenta?
+La primera pantalla de inicio de sesión no mostraba una opción explícita para elegir entre estudiante y administrador. Me di cuenta al probar la aplicación y señalé que necesitaba ambas opciones. Después se agregaron y se validó que la opción de administrador comprobara el rol guardado en Supabase.

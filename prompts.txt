@@ -1,0 +1,19 @@
+prompts:
+
+
+
+4. Prompts que solicité sobre el inicio de sesión:
+
+
+1. Necesito un campo de administrador, ayúdame a entender como lo debo de crear
+ 
+
+2. Tiene que haber otra opción de administrador; solo me deja entrar como estudiante y tiene que tener las dos opciones. 
+
+3. ¿Cómo hago para entrar como administrador?, porque solo me aparece el botón y no hace nada
+
+4. ¿Qué debo modificar en el editor de Supabase?
+
+5. Ayudame a estructurar mi programa
+
+
